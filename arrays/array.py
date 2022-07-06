@@ -4,7 +4,9 @@
 def array_test():
     ar = [3, 2, 4, 5]
 
+    # Popping and Appending
     ar.pop()
+    ar.pop(1)           # Using Index of the element
     ar.append(6)
 
     print(ar)
@@ -29,6 +31,9 @@ def array_test():
 
     # Find the length of the array
     print("Length of the array: ", len(ar))
+
+    # Checking if an element is present inside the list
+    print("Checking if the number 9 is present :", 9 in ar)
 
 def main():
     array_test()
