@@ -13,9 +13,6 @@
 # https://leetcode.com/problems/isomorphic-strings/
 
 
-from typing import List
-
-
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         myDict = {}
