@@ -19,7 +19,6 @@ class Solution:
     def firstUniqChar(self, s: str) -> int:
 
         count = Counter(s)
-        print(count)
 
         for i, chx in enumerate(s):
             if count[chx] == 1:
