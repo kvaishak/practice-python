@@ -1,16 +1,20 @@
 # from typing import List, Optional
-# Given the root of a binary tree, return the preorder traversal of its nodes' values.
+# Given the root of a binary tree, return the inorder traversal of its nodes' values.
 
 
 # Example 1:
 
 
 # Input: root = [1,null,2,3]
-# Output: [1,2,3]
+# Output: [1,3,2]
 
-# https://leetcode.com/problems/binary-tree-preorder-traversal/
+# https://leetcode.com/problems/binary-tree-inorder-traversal/
 
 # Definition for a binary tree node.
+
+from typing import List, Optional
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -26,8 +30,8 @@ class Solution:
             if node == None:
                 return
 
-            val.append(node.val)
             traverse(node.left)
+            val.append(node.val)
             traverse(node.right)
 
         traverse(root)
